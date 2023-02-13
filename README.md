@@ -54,6 +54,14 @@ yarn preview
 - `storybook:build`: create the build version of storybook
 - `generate`: runs plop to generate component files
 
+## Todo
+
+- [ ] Tests
+- [ ] Stories
+- [ ] Remove unused components
+- [ ] Remove unused files (types, etc...)
+- [ ] Adjust theme files
+
 ## Features
 
 - [x] Meaning

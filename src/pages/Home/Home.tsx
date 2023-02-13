@@ -1,3 +1,4 @@
+import { Description } from '~/components/Description'
 import { Word } from '~/components/Word'
 
 import * as S from './Home.styles'
@@ -8,7 +9,7 @@ const word = {
   level: 2,
   type: 'verb',
   pronunciation: 'ad·heer',
-  synonym: 'sticky',
+  synonym: 'stick',
   translation: 'aderir',
   definitions: [
     'stick fast to a surface or substance',
@@ -23,9 +24,8 @@ const word = {
 export function Home() {
   return (
     <S.Page>
-      <S.Container>
-        <Word {...word} />
-      </S.Container>
+      <Word {...word} />
+      <Description />
     </S.Page>
   )
 }

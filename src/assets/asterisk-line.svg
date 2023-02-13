@@ -1,13 +1,19 @@
-<svg width="409" height="133" viewBox="0 0 409 133" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.4" clip-path="url(#clip0_108_824)">
-<path d="M374 66.3L0 66.3" stroke="#E8E8E8"/>
-<path d="M66.1504 0V132.3" stroke="#E8E8E8"/>
-<path d="M112.914 112.914L19.3682 19.3682" stroke="#E8E8E8"/>
-<path d="M112.914 19.3682L19.3682 112.914" stroke="#E8E8E8"/>
-</g>
-<defs>
-<clipPath id="clip0_108_824">
-<rect width="408.864" height="132.3" fill="white"/>
-</clipPath>
-</defs>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 373 133" width="373" height="133">
+	<title>asterisk-line-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m0 0h408.86v132.3h-408.86z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: none; stroke: #E8E8E8 } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer" style="opacity: .4">
+			<path id="Layer" class="s0" d="m374 66.3h-374"/>
+			<path id="Layer" class="s0" d="m66.2 0v132.3"/>
+			<path id="Layer" class="s0" d="m112.9 112.9l-93.5-93.5"/>
+			<path id="Layer" class="s0" d="m112.9 19.4l-93.5 93.5"/>
+		</g>
+	</g>
 </svg>

@@ -5,25 +5,24 @@ export const Container = styled.div`
     z-index: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
-    margin: auto;
+    margin-top: ${theme.spacing[52]};
   `}
 `
 
+export const WordProperties = styled.div``
+
 export const Circles = styled.img`
-  ${({ theme }) => css`
-    z-index: -1;
-    width: 120%;
-    position: absolute;
-    top: -100px;
-    left: -60px;
-  `}
+  z-index: -1;
+  width: 80%;
+  position: absolute;
+  top: -100px;
+  left: 120px;
 `
 
 export const Wrapper = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-  `}
+  display: flex;
 `
 type WordProps = {
   main?: boolean
@@ -99,23 +98,21 @@ export const Examples = styled.div`
   ${({ theme }) => css`
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
     position: relative;
-    margin: ${theme.spacing[80]} ${theme.spacing[0]} ${theme.spacing[10]} -${theme.spacing[48]};
+    margin: ${theme.spacing[72]} ${theme.spacing[0]} ${theme.spacing[10]}
+      ${theme.spacing[20]};
   `}
 `
 
 export const Cube = styled.img`
-  ${({ theme }) => css`
-    position: absolute;
-    top: -35px;
-    left: -40px;
-  `}
+  position: absolute;
+  top: -35px;
+  left: -40px;
 `
 
 export const AsteriskLine = styled.img`
-  ${({ theme }) => css`
-    position: absolute;
-    top: 130px;
-    left: 80%;
-  `}
+  position: absolute;
+  top: 145px;
+  left: 125%;
 `

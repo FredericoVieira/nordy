@@ -10,7 +10,6 @@ import cube from '~/assets/cube.svg'
 
 export function Word({
   id,
-  firstLetter,
   level,
   type,
   pronunciation,
@@ -31,27 +30,29 @@ export function Word({
   return (
     <S.Container>
       <S.Circles src={circles} alt="circles" />
-      <S.Wrapper>
-        <S.Word main>{id.toUpperCase()}</S.Word>
-        <S.Properties>
-          <S.Property>
-            <S.Word>{synonym.toUpperCase()}</S.Word>
-          </S.Property>
-          <S.Property>{type.toUpperCase()}</S.Property>
-          <S.Property>{normalizeGradeLevel(level)}</S.Property>
-        </S.Properties>
-      </S.Wrapper>
-      <S.Wrapper>
-        <S.Translation>{translation.toUpperCase()}</S.Translation>
-        <S.Properties>
-          <S.Pronunciation>/{pronunciation}/</S.Pronunciation>
-          <S.List>
-            {definitions.map((definition, index) => (
-              <S.Item key={index}>{definition}</S.Item>
-            ))}
-          </S.List>
-        </S.Properties>
-      </S.Wrapper>
+      <S.WordProperties>
+        <S.Wrapper>
+          <S.Word main>{id.toUpperCase()}</S.Word>
+          <S.Properties>
+            <S.Property>
+              <S.Word>{synonym.toUpperCase()}</S.Word>
+            </S.Property>
+            <S.Property>{type.toUpperCase()}</S.Property>
+            <S.Property>{normalizeGradeLevel(level)}</S.Property>
+          </S.Properties>
+        </S.Wrapper>
+        <S.Wrapper>
+          <S.Translation>{translation.toUpperCase()}</S.Translation>
+          <S.Properties>
+            <S.Pronunciation>/{pronunciation}/</S.Pronunciation>
+            <S.List>
+              {definitions.map((definition, index) => (
+                <S.Item key={index}>{definition}</S.Item>
+              ))}
+            </S.List>
+          </S.Properties>
+        </S.Wrapper>
+      </S.WordProperties>
       <S.Examples>
         <S.Cube src={cube} alt="cube" />
         <S.List>

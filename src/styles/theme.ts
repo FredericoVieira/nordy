@@ -84,7 +84,7 @@ export const theme = {
     96: '24rem',
   },
   fontSize: {
-    /** 80px */
+    xsmall: '2rem',
     small: '2.5rem',
     regular: '3rem',
     medium: '4rem',
