@@ -60,7 +60,8 @@ yarn preview
 - [ ] Stories
 - [ ] Remove unused components
 - [ ] Remove unused files (types, etc...)
-- [ ] Adjust theme files
+- [ ] Adjust theme files (add other entries)
+- [ ] Refactor styles to use themes variables
 
 ## Features
 

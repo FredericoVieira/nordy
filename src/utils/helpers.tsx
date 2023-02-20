@@ -4,7 +4,17 @@ const grades: { [key: number]: string } = {
   3: 'High',
 }
 
-const normalizeGradeLevel = (level: number) =>
-  `${grades[level]} School`.toUpperCase()
+const normalizeGradeLevel = (level: number) => `${grades[level]} School`
 
-export { normalizeGradeLevel }
+const generateAlphabet = () =>
+  [...Array(26)].map((_, i) => ({
+    letter: String.fromCharCode(i + 97),
+    capital: String.fromCharCode(i + 65),
+  }))
+
+const generateRandomInteger = (max: number) => {
+  max = Math.floor(max)
+  return Math.floor(Math.random() * (max + 1))
+}
+
+export { normalizeGradeLevel, generateAlphabet, generateRandomInteger }

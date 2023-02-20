@@ -1,15 +1,24 @@
 import * as S from './Navigation.styles'
+import { NAVIGATION_LINKS } from './navigation-links'
 
 import type { NavigationProps } from './types'
 
-export function Navigation({ links }: NavigationProps) {
+export function Navigation({ showHeader = true }: NavigationProps) {
   return (
-    <S.Nav>
-      {links.map(({ to, label }) => (
-        <S.NavLink key={label} to={to}>
-          {label}
-        </S.NavLink>
-      ))}
-    </S.Nav>
+    <S.Container>
+      {showHeader && (
+        <S.Header>
+          <S.Text>Search by</S.Text>
+          <S.Text>initial letter:</S.Text>
+        </S.Header>
+      )}
+      <S.Nav>
+        {NAVIGATION_LINKS.map(({ to, label }) => (
+          <S.NavLink key={label} to={to}>
+            {label}
+          </S.NavLink>
+        ))}
+      </S.Nav>
+    </S.Container>
   )
 }

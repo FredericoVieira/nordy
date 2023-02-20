@@ -9,14 +9,14 @@ export const Container = styled.div`
 
 export const Circle = styled.img`
   position: absolute;
-  width: 35%;
-  top: -20px;
+  width: 30%;
+  top: -35px;
   left: 50px;
 `
 
 export const Description = styled.p`
   ${({ theme }) => css`
-    max-width: 40%;
+    max-width: 30%;
     font-size: ${theme.fontSize.regular};
     margin-left: ${theme.spacing[28]};
   `}

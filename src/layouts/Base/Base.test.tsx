@@ -14,8 +14,8 @@ describe('<Base />', () => {
 
     expect(screen.getByRole('navigation')).toBeInTheDocument()
 
-    const [home, about] = screen.getAllByRole('link')
+    const [home, letter] = screen.getAllByRole('link')
     expect(home).toHaveTextContent('Home')
-    expect(about).toHaveTextContent('About')
+    expect(letter).toHaveTextContent('Letter')
   })
 })

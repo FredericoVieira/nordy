@@ -2,19 +2,19 @@ import { MemoryRouter } from 'react-router-dom'
 
 import { render, screen } from '~/utils/tests'
 
-import { About } from '.'
+import { Letter } from '.'
 
-describe('<About />', () => {
+describe('<Letter />', () => {
   it('renders correctly', () => {
     render(
       <MemoryRouter>
-        <About />
+        <Letter />
       </MemoryRouter>
     )
 
     const [title, description] = screen.getAllByRole('heading')
 
-    expect(title).toHaveTextContent('About Page')
-    expect(description).toHaveTextContent('This is the about page description')
+    expect(title).toHaveTextContent('Letter Page')
+    expect(description).toHaveTextContent('This is the Letter page description')
   })
 })

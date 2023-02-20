@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import { MemoryRouter } from 'react-router-dom'
 
-import { NAV_LINKS } from '~/constants'
+import { NAVIGATION_LINKS } from './navigation-links'
 
 import { Navigation } from '.'
 
@@ -9,7 +9,7 @@ export default {
   title: 'Navigation',
   component: Navigation,
   args: {
-    links: NAV_LINKS,
+    links: NAVIGATION_LINKS,
   },
 } as ComponentMeta<typeof Navigation>
 
