@@ -1,6 +1,8 @@
 import { NavLink as RouterNavLink } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 
+import { ReactComponent as Home } from '~/assets/home.svg'
+
 export const Container = styled.div`
   ${({ theme }) => css`
     position: relative;
@@ -31,6 +33,11 @@ export const Nav = styled.nav`
     width: 100%;
     padding: ${theme.spacing[8]};
   `}
+`
+
+export const HomeIcon = styled(Home)`
+  width: 23px;
+  margin-bottom: -2px;
 `
 
 export const NavLink = styled(RouterNavLink)`

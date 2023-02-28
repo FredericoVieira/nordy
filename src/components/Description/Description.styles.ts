@@ -1,5 +1,7 @@
 import styled, { css } from 'styled-components'
 
+import { ReactComponent as Circle } from '~/assets/circle.svg'
+
 export const Container = styled.div`
   ${({ theme }) => css`
     position: relative;
@@ -7,10 +9,10 @@ export const Container = styled.div`
   `}
 `
 
-export const Circle = styled.img`
+export const CircleImage = styled(Circle)`
   position: absolute;
-  width: 30%;
-  top: -35px;
+  width: 350px;
+  top: -75px;
   left: 50px;
 `
 

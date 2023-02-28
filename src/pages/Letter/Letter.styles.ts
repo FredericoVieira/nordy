@@ -1,14 +1,18 @@
 import styled, { css } from 'styled-components'
 
+import { ReactComponent as Asterisk } from '~/assets/asterisk.svg'
+import { ReactComponent as Star } from '~/assets/star.svg'
+import { ReactComponent as Table } from '~/assets/table.svg'
+
 export const Page = styled.div`
   ${({ theme }) => css`
     position: relative;
     padding: ${theme.spacing[16]};
   `}
 `
-export const Star = styled.img`
+export const StarImage = styled(Star)`
   position: absolute;
-  top: 0px;
+  top: -60px;
   left: 30px;
   width: 280px;
 `
@@ -36,9 +40,13 @@ export const WordList = styled.div`
     margin: ${theme.spacing[24]} ${theme.spacing[0]} ${theme.spacing[24]}
       ${theme.spacing[40]};
   `}
+
+  &:hover {
+    cursor: pointer;
+  }
 `
 
-export const Asterisk = styled.img`
+export const AsteriskImage = styled(Asterisk)`
   width: 35px;
 `
 
@@ -72,9 +80,9 @@ export const Pronunciation = styled.span`
   `}
 `
 
-export const Table = styled.img`
+export const TableImage = styled(Table)`
   position: absolute;
-  bottom: -20px;
-  right: 0px; // TODO: Adjust horizontal scroll
-  width: 500px;
+  bottom: -40px;
+  right: 0px;
+  width: 450px;
 `

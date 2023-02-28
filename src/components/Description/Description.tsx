@@ -1,11 +1,9 @@
 import * as S from './Description.styles'
 
-import circle from '~/assets/circle.svg'
-
 export function Description() {
   return (
     <S.Container>
-      <S.Circle src={circle} alt="circle" />
+      <S.CircleImage />
       <S.Description>
         Nordy is a dictionary with the words and their meanings that I learn on
         a daily basis

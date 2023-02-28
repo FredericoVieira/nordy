@@ -3,7 +3,7 @@ import { NAVIGATION_LINKS } from './navigation-links'
 
 import type { NavigationProps } from './types'
 
-export function Navigation({ showHeader = true }: NavigationProps) {
+export function Navigation({ showHeader = false }: NavigationProps) {
   return (
     <S.Container>
       {showHeader && (
@@ -14,7 +14,7 @@ export function Navigation({ showHeader = true }: NavigationProps) {
       )}
       <S.Nav>
         {NAVIGATION_LINKS.map(({ to, label }) => (
-          <S.NavLink key={label} to={to}>
+          <S.NavLink key={to} to={to}>
             {label}
           </S.NavLink>
         ))}

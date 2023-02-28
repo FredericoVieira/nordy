@@ -1,5 +1,9 @@
 import styled, { css } from 'styled-components'
 
+import { ReactComponent as AsteriskLine } from '~/assets/asterisk-line.svg'
+import { ReactComponent as Circles } from '~/assets/circles.svg'
+import { ReactComponent as Cube } from '~/assets/cube.svg'
+
 export const Container = styled.div`
   ${({ theme }) => css`
     z-index: 0;
@@ -11,20 +15,20 @@ export const Container = styled.div`
   `}
 `
 
-export const WordProperties = styled.div`
-  width: min-content;
-`
-
-export const Circles = styled.img`
-  width: 55%;
+export const CirclesImage = styled(Circles)`
+  z-index: -1;
+  width: 500px;
   position: absolute;
-  top: 15%;
-  left: 20%;
+  top: -30px;
+`
+type WrapperProps = {
+  hasMaxWidth?: boolean
+}
+export const Wrapper = styled.div<WrapperProps>`
+  display: flex;
+  max-width: ${({ hasMaxWidth }) => (hasMaxWidth ? '70%' : 'auto')};
 `
 
-export const Wrapper = styled.div`
-  display: flex;
-`
 type WordProps = {
   main?: boolean
 }
@@ -87,25 +91,33 @@ export const Item = styled.li`
     }
 
     &:last-child {
-      margin-left: ${theme.spacing[16]};
+      margin-left: ${theme.spacing[12]};
     }
   `}
 `
-
-export const List = styled.ol`
-  ${({ theme, isSingleDefinition, hasMargin }) => css`
+type ListProps = {
+  hasSingleItem?: boolean
+  isExample?: boolean
+}
+export const List = styled.ol<ListProps>`
+  ${({ theme, hasSingleItem, isExample }) => css`
     font-size: ${theme.fontSize.small};
     line-height: ${theme.fontSize.medium};
-    padding: ${theme.spacing[3]} ${theme.spacing[0]};
-    margin-left: ${hasMargin ? `-${theme.spacing[48]}` : theme.spacing[12]};
+    ${isExample && `margin-left: ${theme.spacing[10]};`}
 
-    ${isSingleDefinition &&
+    ${hasSingleItem &&
     `
-      list-style: circle;
+      list-style: none;
       
       ${Item} {        
         &:last-child {
-          margin-left: ${theme.spacing[0]};
+          ${
+            isExample &&
+            `
+              margin-top: ${theme.spacing[8]};
+              margin-left: ${theme.spacing[0]};
+            `
+          }
         }
       }
     `}
@@ -117,26 +129,23 @@ export const Examples = styled.div`
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    width: 65%;
+    width: 60%;
     position: relative;
     margin: ${theme.spacing[72]} ${theme.spacing[0]} ${theme.spacing[10]}
       ${theme.spacing[20]};
   `}
 `
 
-export const Cube = styled.img`
+export const CubeImage = styled(Cube)`
   position: absolute;
-  width: 18%;
+  width: 150px;
   top: -35px;
   left: -40px;
-  /* width: 10%;
-  bottom: -2%;
-  left: 2%; */
 `
 
-export const AsteriskLine = styled.img`
+export const AsteriskLineImage = styled(AsteriskLine)`
   position: absolute;
-  width: 25%;
+  width: 300px;
   bottom: -155px;
   right: 0;
 `

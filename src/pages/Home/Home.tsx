@@ -13,7 +13,7 @@ export function Home() {
 
   const randomInteger = generateRandomInteger(words.length)
   const selectedWord =
-    (id && words.find((word) => word.id === id)) ?? words[randomInteger]
+    (id && words.find((word) => word.id === id)) || words[randomInteger]
 
   return (
     <S.Page>
