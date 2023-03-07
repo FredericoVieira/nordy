@@ -1,7 +1,5 @@
 export const theme = {
   colors: {
-    inherit: 'inherit',
-    current: 'currentColor',
     transparent: 'transparent',
     black: '#000',
     white: '#fff',
@@ -12,10 +10,8 @@ export const theme = {
     yellow: '#edf738',
   },
   spacing: {
-    /** 1px */
-    px: '1px',
     /** 0px */
-    0: '0px',
+    0: '0rem',
     /** 2px */
     0.5: '0.125rem',
     /** 4px */
@@ -84,18 +80,25 @@ export const theme = {
     96: '24rem',
   },
   fontSize: {
-    xsmall: '2rem',
-    small: '2.5rem',
-    regular: '3rem',
-    medium: '4rem',
-    large: '5rem',
-    xlarge: '10rem',
-    xxlarge: '15rem',
+    /** 32px */
+    label: '2rem',
+    /** 32px */
+    labelLarge: '2.5rem',
+    /** 32px */
+    bodySmall: '3rem',
+    /** 64px */
+    body: '4rem',
+    /** 80px */
+    bodyLarge: '5rem',
+    /** 160px */
+    title: '10rem',
+    /** 240px */
+    titleLarge: '15rem',
   },
   fontWeight: {
     bold: 'bold',
   },
   fontFamily: {
-    title: "'Reenie Beanie', cursive;",
+    title: "'Reenie Beanie', cursive",
   },
 }

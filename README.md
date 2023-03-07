@@ -58,10 +58,10 @@ yarn preview
 
 - [ ] Tests
 - [ ] Stories
-- [ ] Remove unused components
-- [ ] Remove unused files (types, etc...)
-- [ ] Adjust theme files (add other entries)
-- [ ] Refactor styles to use themes variables
+- [ ] Footer
+- [ ] The word it is not matching the style if a variation is used in examples: acknowledge x acknowledged
+- [ ] Extra space on examples if the word is followed by a punctuation in examples
+- [ ] Scroll on top on page change
 
 ## Features
 
@@ -70,7 +70,6 @@ yarn preview
 - [x] Pronunciation
 - [x] Grade level
 - [x] Category by first letter
-- [ ] Support mobile
 - [ ] Word type: slang, acronym
 - [ ] Expressions
 - [ ] Refactor data files / database

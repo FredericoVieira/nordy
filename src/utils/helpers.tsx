@@ -4,7 +4,7 @@ const grades: { [key: number]: string } = {
   3: 'High',
 }
 
-const normalizeGradeLevel = (level: number) => `${grades[level]} School`
+const normalizeGradeLevel = (level: number) => `${grades[level]}-Sch`
 
 const generateAlphabet = () =>
   [...Array(26)].map((_, i) => ({

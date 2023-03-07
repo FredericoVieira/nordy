@@ -3,6 +3,7 @@ import * as S from './Description.styles'
 export function Description() {
   return (
     <S.Container>
+      <S.AsteriskLineImage />
       <S.CircleImage />
       <S.Description>
         Nordy is a dictionary with the words and their meanings that I learn on

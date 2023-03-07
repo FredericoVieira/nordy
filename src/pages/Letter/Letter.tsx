@@ -17,14 +17,20 @@ export function Letter() {
       <S.StarImage />
       <S.Letter>{letter}</S.Letter>
       <S.LetterList>
-        {filteredWords.map(({ id, translation, pronunciation }) => (
-          <S.WordList key={id} onClick={() => navigate(`/${id}`)}>
-            <S.AsteriskImage />
-            <S.Word key={id}>{id}</S.Word>
-            <S.Translation>{translation}</S.Translation>
-            <S.Pronunciation>/{pronunciation}/</S.Pronunciation>
-          </S.WordList>
-        ))}
+        {filteredWords.length ? (
+          filteredWords.map(({ id, translation, pronunciation }) => (
+            <S.WordList key={id} onClick={() => navigate(`/${id}`)}>
+              <S.AsteriskImage />
+              <S.Word key={id}>{id}</S.Word>
+              <S.Translation>{translation}</S.Translation>
+              <S.Pronunciation>/{pronunciation}/</S.Pronunciation>
+            </S.WordList>
+          ))
+        ) : (
+          <S.EmptyLetterListMessage>
+            No words to display
+          </S.EmptyLetterListMessage>
+        )}
       </S.LetterList>
       <S.TableImage />
     </S.Page>
