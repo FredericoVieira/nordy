@@ -19,7 +19,7 @@ export const Text = styled.p`
     font-size: ${theme.fontSize.bodySmall};
     font-weight: ${theme.fontWeight.bold};
     color: ${theme.colors.black};
-    background-color: ${theme.colors.gray[1]};
+    background-color: ${theme.colors.gray};
     text-transform: uppercase;
     letter-spacing: ${theme.spacing[4]};
     padding: ${theme.spacing[1]} ${theme.spacing[6]};
@@ -52,7 +52,7 @@ export const HomeIcon = styled(Home)`
 export const NavLink = styled(RouterNavLink)`
   ${({ theme }) => css`
     display: inline-block;
-    color: ${theme.colors.gray[1]};
+    color: ${theme.colors.gray};
     font-size: ${theme.fontSize.labelLarge};
     padding: ${theme.spacing[2]} ${theme.spacing[4]};
     border-bottom: 2px solid ${theme.colors.transparent};

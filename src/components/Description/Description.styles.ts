@@ -63,8 +63,8 @@ export const Motivation = styled.p`
     margin: ${theme.spacing[32]} ${theme.spacing[20]} ${theme.spacing[32]} auto;
     padding-top: ${theme.spacing[16]};
     padding-bottom: ${theme.spacing[16]};
-    border-top: 1px solid ${theme.colors.gray[1]};
-    border-bottom: 1px solid ${theme.colors.gray[1]};
+    border-top: 1px solid ${theme.colors.gray};
+    border-bottom: 1px solid ${theme.colors.gray};
 
     ${media.lessThan('medium')`
       max-width: 100%;

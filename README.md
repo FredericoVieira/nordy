@@ -58,7 +58,6 @@ yarn preview
 
 - [ ] Tests
 - [ ] Stories
-- [ ] Footer
 - [ ] The word it is not matching the style if a variation is used in examples: acknowledge x acknowledged
 - [ ] Extra space on examples if the word is followed by a punctuation in examples
 - [ ] Scroll on top on page change

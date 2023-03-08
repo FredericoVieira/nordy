@@ -45,6 +45,7 @@
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-github-corner": "^2.5.0",
     "react-router-dom": "6.6.1",
     "styled-components": "5.3.6",
     "styled-media-query": "^2.1.2",

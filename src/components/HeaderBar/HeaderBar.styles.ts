@@ -1,3 +1,4 @@
+import GithubCornerIcon from 'react-github-corner'
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
@@ -20,5 +21,14 @@ export const Title = styled.span`
     ${media.lessThan('medium')`
       font-size: ${theme.fontSize.body};
     `}
+  `}
+`
+
+export const GithubCorner = styled(GithubCornerIcon)`
+  ${media.lessThan('medium')`
+    & > svg {
+      width: 50px;
+      height: 50px;
+    }
   `}
 `

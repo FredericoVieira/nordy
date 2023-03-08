@@ -3,10 +3,7 @@ export const theme = {
     transparent: 'transparent',
     black: '#000',
     white: '#fff',
-    gray: {
-      0: '#7a7a7a',
-      1: '#8e8e8e',
-    },
+    gray: '#8e8e8e',
     yellow: '#edf738',
   },
   spacing: {
@@ -80,6 +77,8 @@ export const theme = {
     96: '24rem',
   },
   fontSize: {
+    /** 24px */
+    labelSmall: '1.5rem',
     /** 32px */
     label: '2rem',
     /** 32px */
