@@ -4,17 +4,24 @@ import { render, screen } from '~/utils/tests'
 
 import { Home } from '.'
 
+vi.mock('react-router-dom', async () => {
+  const mod = (await vi.importActual('react-router-dom')) as object
+  return {
+    ...mod,
+    useParams: () => ({
+      id: 'adhere',
+    }),
+  }
+})
+
 describe('<Home />', () => {
-  it('renders correctly', () => {
+  it('renders properly', () => {
     render(
       <MemoryRouter>
         <Home />
       </MemoryRouter>
     )
 
-    const [title, description] = screen.getAllByRole('heading')
-
-    expect(title).toHaveTextContent('Home Page')
-    expect(description).toHaveTextContent('This is the home page description')
+    expect(screen.getAllByText(/adhere/i)).toHaveLength(3)
   })
 })

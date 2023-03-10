@@ -3,7 +3,7 @@ import * as S from './Footer.styles'
 export function Footer() {
   return (
     <S.Footer>
-      <S.Hr />
+      <S.Hr aria-label="separator" />
       <S.Note>
         © {new Date().getFullYear()} -{' '}
         <S.Link href="https://fredvieira.dev/" target="_blank">
