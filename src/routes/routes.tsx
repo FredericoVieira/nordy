@@ -1,16 +1,22 @@
-import { Route, Routes } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom'
 
 import { Base } from '~/layouts/Base'
 import { Home } from '~/pages/Home'
 import { Letter } from '~/pages/Letter'
 
-export function AppRoutes() {
-  return (
-    <Routes>
-      <Route element={<Base />}>
-        <Route path="/:id?" element={<Home />} />
-        <Route path="letter/:letter" element={<Letter />} />
-      </Route>
-    </Routes>
-  )
-}
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Base />,
+    children: [
+      {
+        path: '/:id?',
+        element: <Home />,
+      },
+      {
+        path: 'letter/:letter',
+        element: <Letter />,
+      },
+    ],
+  },
+])

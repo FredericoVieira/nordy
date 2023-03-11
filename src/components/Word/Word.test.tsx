@@ -18,6 +18,7 @@ const word = {
     'the stamp failed to adhere to the envelope',
     'adhere to traditional values',
   ],
+  inflections: [],
 }
 
 describe('<Word />', () => {

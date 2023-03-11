@@ -17,14 +17,16 @@ export const Page = styled.div`
 `
 export const StarImage = styled(Star)`
   position: absolute;
-  width: 280px;
-  top: -60px;
-  left: 30px;
+  height: 300px;
+  width: 300px;
+  top: 20px;
+  left: 80px;
 
   ${media.lessThan('medium')`
-    width: 180px;
-    top: -110px;
-    left: 30px;
+    height: 150px;
+    width: 150px;
+    top: 25px;
+    left: 45px;
   `}
 `
 
@@ -38,7 +40,8 @@ export const Letter = styled.span`
 
     ${media.lessThan('medium')`
       font-size: ${theme.fontSize.bodyLarge};
-      left: 70px;
+      top: 10px;
+      left: 25px;
     `}
   `}
 `

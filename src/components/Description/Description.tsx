@@ -16,7 +16,7 @@ export function Description() {
         <br />
         The dictionary is intended for intermediate and advanced English
         learners who lack fluency and for those who want to improve their
-        vocabulary.
+        vocabulary
       </S.Motivation>
     </S.Container>
   )

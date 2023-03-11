@@ -1,4 +1,4 @@
-import { normalizeGradeLevel } from '~/utils'
+import { handlePunctuation, normalizeGradeLevel } from '~/utils/helpers'
 
 import * as S from './Word.styles'
 
@@ -13,14 +13,20 @@ export function Word({
   translation,
   definitions,
   examples,
+  inflections,
 }: WordProps) {
   const hasSingleItem = definitions.length === 1
 
   const handleExample = (example: string) => {
-    const [after, before] = example.split(id)
+    const inflection = inflections.find((inflection) => {
+      return example.includes(inflection)
+    })
+    const word = inflection || id
+    const [after, before] = example.split(word)
     return (
       <>
-        {after} <S.Word>{id}</S.Word> {before}
+        {after} <S.Word>{word}</S.Word>
+        {handlePunctuation(before)}
       </>
     )
   }

@@ -24,6 +24,7 @@ export const AsteriskLineImage = styled(AsteriskLine)`
     ${media.lessThan('medium')`
       width: 50%;
       top: -135px;
+      right: -${theme.spacing[12]};
     `}
   `}
 `

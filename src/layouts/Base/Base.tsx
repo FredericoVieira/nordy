@@ -1,4 +1,4 @@
-import { Outlet, useMatch } from 'react-router-dom'
+import { Outlet, ScrollRestoration, useMatch } from 'react-router-dom'
 
 import { Footer } from '~/components/Footer'
 import { HeaderBar } from '~/components/HeaderBar'
@@ -13,6 +13,7 @@ export function Base() {
       <Outlet />
       <Navigation showHeader={!!match} />
       <Footer />
+      <ScrollRestoration />
     </>
   )
 }

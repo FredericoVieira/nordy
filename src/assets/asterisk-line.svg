@@ -9,7 +9,7 @@
 		.s0 { fill: none; stroke: #E8E8E8 } 
 	</style>
 	<g id="Clip-Path" clip-path="url(#cp1)">
-		<g id="Layer" style="opacity: .4">
+		<g id="Layer" style="opacity: 0.4">
 			<path id="Layer" class="s0" d="m374 66.3h-374"/>
 			<path id="Layer" class="s0" d="m66.2 0v132.3"/>
 			<path id="Layer" class="s0" d="m112.9 112.9l-93.5-93.5"/>

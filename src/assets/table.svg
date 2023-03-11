@@ -1,10 +1,10 @@
 <svg width="816" height="244" viewBox="0 0 816 244" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M408.079 1H1V16.874H408.079V1Z" stroke="#EDF738" stroke-opacity="0.4"/>
-<path d="M815.159 1H408.079V16.874H815.159V1Z" stroke="#EDF738" stroke-opacity="0.4"/>
-<path d="M407.982 169H1V243H407.982V169Z" stroke="#EDF738" stroke-opacity="0.4"/>
-<path d="M407.982 17H1V91H407.982V17Z" stroke="#EDF738" stroke-opacity="0.4"/>
-<path d="M407.982 91H1V169H407.982V91Z" stroke="#EDF738" stroke-opacity="0.4"/>
-<path d="M814.964 91H407.981V169H814.964V91Z" stroke="#EDF738" stroke-opacity="0.4"/>
-<path d="M814.964 169H407.981V243H814.964V169Z" stroke="#EDF738" stroke-opacity="0.4"/>
-<path d="M814.964 17H407.981V91H814.964V17Z" stroke="#EDF738" stroke-opacity="0.4"/>
+<path d="M408.079 1H1V16.874H408.079V1Z" stroke="#EDF738" stroke-opacity="0.5"/>
+<path d="M815.159 1H408.079V16.874H815.159V1Z" stroke="#EDF738" stroke-opacity="0.5"/>
+<path d="M407.982 169H1V243H407.982V169Z" stroke="#EDF738" stroke-opacity="0.5"/>
+<path d="M407.982 17H1V91H407.982V17Z" stroke="#EDF738" stroke-opacity="0.5"/>
+<path d="M407.982 91H1V169H407.982V91Z" stroke="#EDF738" stroke-opacity="0.5"/>
+<path d="M814.964 91H407.981V169H814.964V91Z" stroke="#EDF738" stroke-opacity="0.5"/>
+<path d="M814.964 169H407.981V243H814.964V169Z" stroke="#EDF738" stroke-opacity="0.5"/>
+<path d="M814.964 17H407.981V91H814.964V17Z" stroke="#EDF738" stroke-opacity="0.5"/>
 </svg>

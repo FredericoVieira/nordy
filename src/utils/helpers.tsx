@@ -17,4 +17,14 @@ const generateRandomInteger = (max: number) => {
   return Math.floor(Math.random() * (max + 1))
 }
 
-export { normalizeGradeLevel, generateAlphabet, generateRandomInteger }
+const handlePunctuation = (endingSentenceSlice: string) => {
+  const startsWithPunctuation = !!endingSentenceSlice.match(/^[.,:!?]/)
+  return `${startsWithPunctuation ? '' : ' '}${endingSentenceSlice}`
+}
+
+export {
+  normalizeGradeLevel,
+  generateAlphabet,
+  generateRandomInteger,
+  handlePunctuation,
+}
