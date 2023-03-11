@@ -6,6 +6,8 @@
 
 Nordy is a dictionary with the words and their meanings that I learn on a daily basis.
 
+Available in: https://nordy.vercel.app/
+
 ## Getting Started
 
 Clone the repo, enter in the nordy folder and install the dependencies:

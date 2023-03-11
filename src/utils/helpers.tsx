@@ -18,7 +18,7 @@ const generateRandomInteger = (max: number) => {
 }
 
 const handlePunctuation = (endingSentenceSlice: string) => {
-  const startsWithPunctuation = !!endingSentenceSlice.match(/^[.,:!?]/)
+  const startsWithPunctuation = !!endingSentenceSlice?.match(/^[.,:!?]/)
   return `${startsWithPunctuation ? '' : ' '}${endingSentenceSlice}`
 }
 
