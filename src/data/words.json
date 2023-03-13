@@ -9,6 +9,7 @@
     "translation": "aderir",
     "definitions": ["stick fast to a surface or substance", "to give support or maintain loyalty"],
     "examples": ["the stamp failed to adhere to the envelope", "adhere to traditional values"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -21,6 +22,7 @@
     "translation": "reconhecer",
     "definitions": ["to recognize the rights, authority, or status of", "to disclose knowledge of or agreement with"],
     "examples": ["they acknowledged him as their leader", "she readily acknowledged her mistake"],
+    "language": "formal",
     "inflections": ["acknowledged"]
   },
   {
@@ -33,6 +35,7 @@
     "translation": "cortesia",
     "definitions": ["something intended to make life more pleasant or comfortable"],
     "examples": ["this hotel give us good amenities"],
+    "language": "formal",
     "inflections": ["amenities"]
   },
   {
@@ -45,6 +48,7 @@
     "translation": "ciente",
     "definitions": ["having knowledge or perception of a situation or fact"],
     "examples": ["he was aware that a problem existed"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -57,6 +61,7 @@
     "translation": "por muito pouco",
     "definitions": ["only just, almost not"],
     "examples": ["he barely talked to me"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -69,6 +74,7 @@
     "translation": "viés",
     "definitions": ["prejudice in favor of or against one thing, person, or group compared with another"],
     "examples": ["his natural bias was to respect things as they were"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -81,6 +87,7 @@
     "translation": "limite",
     "definitions": ["a real or imagined line that marks the edge or limit of something"],
     "examples": ["those two trees mark the boundary of our property"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -93,6 +100,7 @@
     "translation": "amplamente",
     "definitions": ["in a general way", "without considering specific examples or all the details"],
     "examples": ["people broadly agree that government should care about the population", "broadly speaking, I agree with you"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -102,10 +110,11 @@
     "type": "verb",
     "pronunciation": "kling",
     "synonym": "sticky",
-    "translation": "apegado",
+    "translation": "grudar",
     "definitions": ["adhere or stick firmly or closely to", "be hard to part or remove from"],
     "examples": ["the smell of smoke clung to their clothes", "don't cling to the first thing you see"],
-    "inflections": []
+    "language": "formal",
+    "inflections": ["clung"]
   },
   {
     "id": "disclaimer",
@@ -117,6 +126,7 @@
     "translation": "aviso legal",
     "definitions": ["a statement that you are not responsible for something"],
     "examples": ["the disclaimer reminded viewers that the movie is a drama, not a documentary"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -129,6 +139,7 @@
     "translation": "divulgação",
     "definitions": ["to improve the quality, amount, or strength of something"],
     "examples": ["a judge ordered the disclosure of the documents"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -141,6 +152,7 @@
     "translation": "realçar",
     "definitions": ["the action of making new or secret information known"],
     "examples": ["this dictionary enhance listening skills and comprehension"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -153,6 +165,7 @@
     "translation": "pressa",
     "definitions": ["excessive speed or urgency"],
     "examples": ["in her haste, she slammed her shoulder against the stall"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -165,6 +178,7 @@
     "translation": "sede",
     "definitions": ["the main offices or center of operations of an organization, such as the army, police, or a company"],
     "examples": ["the airline headquarters is in Boston"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -177,6 +191,7 @@
     "translation": "interno",
     "definitions": ["inside or contained within something else"],
     "examples": ["an inner courtyard"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -193,6 +208,32 @@
     "inflections": []
   },
   {
+    "id": "leak",
+    "firstLetter": "l",
+    "level": 1,
+    "type": "verb",
+    "pronunciation": "lek",
+    "synonym": "escape",
+    "translation": "vazar",
+    "definitions": ["to let a substance or light in or out through an opening", "intentionally disclose"],
+    "examples": ["the roof was leaking", "who had a motive to leak the story?"],
+    "language": "formal",
+    "inflections": ["leaking"]
+  },
+  {
+    "id": "lid",
+    "firstLetter": "l",
+    "level": 1,
+    "type": "noun",
+    "pronunciation": "lid",
+    "synonym": "cover",
+    "translation": "tipo",
+    "definitions": ["a removable or hinged cover for the top of a container"],
+    "examples": ["the lid is fully detachable"],
+    "language": "formal",
+    "inflections": []
+  },
+  {
     "id": "outsource",
     "firstLetter": "o",
     "level": 1,
@@ -202,6 +243,7 @@
     "translation": "terceirização",
     "definitions": ["obtain goods or a service from an outside or foreign supplier, especially in place of an internal source"],
     "examples": ["you may choose to outsource this function to another company or do it yourself"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -214,6 +256,7 @@
     "translation": "anterior",
     "definitions": ["coming before in time, order, or importance"],
     "examples": ["passengers may board the plane twenty minutes prior to departure"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -226,6 +269,7 @@
     "translation": "propenso",
     "definitions": ["likely to do, get, or suffer from something", "lying on your chest, with your face looking down"],
     "examples": ["as a child, he was prone to ear infections", "the injured player was lifted into a cart and driven off the field in a prone position"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -238,6 +282,7 @@
     "translation": "em vez",
     "definitions": ["in preference to", "more accurately, more exactly"],
     "examples": ["I'd rather wear the black shoes", "these were not common criminals, but rather enemies of the state"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -250,6 +295,7 @@
     "translation": "em relação a",
     "definitions": ["in relation to, about"],
     "examples": ["I have a question regarding your last statement"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -262,6 +308,7 @@
     "translation": "confiar",
     "definitions": ["to depend on or trust someone or something"],
     "examples": ["you can't rely on good weather for the whole trip"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -274,6 +321,7 @@
     "translation": "causa",
     "definitions": ["for the purpose of, in the interest of, in order to achieve or preserve"],
     "examples": ["the couple moved to the coast for the sake of her health"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -286,6 +334,7 @@
     "translation": "esforço",
     "definitions": ["make great efforts to achieve or obtain something"],
     "examples": ["I will strive to overcome these problems"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -298,6 +347,7 @@
     "translation": "sutil",
     "definitions": ["not loud, bright, noticeable, or obvious in any way", "small but important"],
     "examples": ["the room was painted a subtle shade of gray", "there is a subtle difference between these two plans"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -310,6 +360,7 @@
     "translation": "na direção",
     "definitions": ["in the direction of"],
     "examples": ["I walked toward the front door"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -322,6 +373,7 @@
     "translation": "imparcial",
     "definitions": ["showing no prejudice for or against something"],
     "examples": ["they give clear, unbiased advice"],
+    "language": "formal",
     "inflections": []
   },
   {
@@ -334,6 +386,7 @@
     "translation": "sabedoria",
     "definitions": ["the ability to use your knowledge and experience to make good decisions and judgments"],
     "examples": ["I certainly hope to gain a little wisdom as I grow older"],
+    "language": "formal",
     "inflections": []
   }
 ]
