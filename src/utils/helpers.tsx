@@ -1,10 +1,10 @@
 const grades: { [key: number]: string } = {
-  1: '1st',
-  2: '2nd',
-  3: 'High',
+  1: 'Basic',
+  2: 'Medium',
+  3: 'Advanced',
 }
 
-const normalizeGradeLevel = (level: number) => `${grades[level]}-Sch`
+const normalizeGradeLevel = (level: number) => grades[level]
 
 const generateAlphabet = () =>
   [...Array(26)].map((_, i) => ({
