@@ -1,26 +1,19 @@
-const { resolve } = require('path')
+import type { StorybookConfig } from '@storybook/react-vite'
 
-const { loadConfigFromFile, mergeConfig } = require('vite')
-
-module.exports = {
-  stories: ['../src/**/*.stories.tsx'],
+const config: StorybookConfig = {
+  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
+    '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
   ],
-  framework: '@storybook/react',
-  core: {
-    builder: '@storybook/builder-vite',
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
   },
-  viteFinal: async (config, { configType }) => {
-    const { config: userConfig } = await loadConfigFromFile(
-      resolve(__dirname, '../.vite.config.js')
-    )
-
-    return mergeConfig(config, {
-      ...userConfig,
-      plugins: [],
-    })
+  docs: {
+    autodocs: 'tag',
   },
 }
+export default config
