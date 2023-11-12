@@ -2,7 +2,7 @@ import { MemoryRouter } from 'react-router-dom'
 
 import { render, screen } from '~/utils/tests'
 
-import { Home } from '.'
+import { Home } from './Home'
 
 vi.mock('react-router-dom', async () => {
   const mod = (await vi.importActual('react-router-dom')) as object

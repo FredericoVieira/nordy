@@ -1,12 +1,14 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { Description } from './Description'
 
-import { Description } from '.'
+import type { Meta, StoryObj } from '@storybook/react'
 
-export default {
-  title: 'Description',
+const meta = {
+  title: 'Components/Description',
   component: Description,
-} as ComponentMeta<typeof Description>
+  tags: ['autodocs'],
+} satisfies Meta<typeof Description>
 
-const Template: ComponentStory<typeof Description> = () => <Description />
+export default meta
+type Story = StoryObj<typeof meta>
 
-export const Default = Template.bind({})
+export const Default: Story = {}

@@ -15,7 +15,7 @@ export function Word({
   examples,
   inflections,
 }: WordProps) {
-  const hasSingleItem = definitions.length === 1
+  const hasSingleItem = definitions?.length === 1
 
   const handleExample = (example: string) => {
     const inflection = inflections.find((inflection) => {
@@ -48,9 +48,9 @@ export function Word({
         <S.Translation>{translation}</S.Translation>
         <S.Pronunciation>/{pronunciation}/</S.Pronunciation>
       </S.Wrapper>
-      <S.Wrapper hasMaxWidth>
+      <S.Wrapper>
         <S.List hasSingleItem={hasSingleItem}>
-          {definitions.map((definition, index) => (
+          {definitions?.map((definition, index) => (
             <S.Item key={index}>{definition}</S.Item>
           ))}
         </S.List>
@@ -58,11 +58,12 @@ export function Word({
       <S.Examples>
         <S.CubeImage />
         <S.List hasSingleItem={hasSingleItem} isExample>
-          {examples.map((example, index) => (
+          {examples?.map((example, index) => (
             <S.Item key={index}>{handleExample(example)}</S.Item>
           ))}
         </S.List>
       </S.Examples>
+      <S.AsteriskLineImage />
     </S.Container>
   )
 }

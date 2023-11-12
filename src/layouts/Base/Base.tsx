@@ -5,13 +5,13 @@ import { HeaderBar } from '~/components/HeaderBar'
 import { Navigation } from '~/components/Navigation'
 
 export function Base() {
-  const match = useMatch('/')
+  const matchHomePage = useMatch('/')
 
   return (
     <>
       <HeaderBar />
       <Outlet />
-      <Navigation showHeader={!!match} />
+      <Navigation isHomePage={!!matchHomePage} />
       <Footer />
       <ScrollRestoration />
     </>

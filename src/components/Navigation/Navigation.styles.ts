@@ -11,7 +11,18 @@ export const Container = styled.div`
   `}
 `
 
-export const Header = styled.div``
+type HeaderProps = {
+  isHomePage?: boolean
+}
+export const Header = styled.div<HeaderProps>`
+  ${({ theme, isHomePage }) => css`
+    margin-top: ${theme.spacing[64]};
+
+    ${media.lessThan('medium')`
+      margin-top: ${theme.spacing[isHomePage ? 16 : 48]};
+    `}
+  `}
+`
 
 export const Text = styled.p`
   ${({ theme }) => css`

@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
+import { ReactComponent as AsteriskLine } from '~/assets/asterisk-line.svg'
 import { ReactComponent as Circles } from '~/assets/circles.svg'
 import { ReactComponent as Cube } from '~/assets/cube.svg'
 
@@ -12,6 +13,10 @@ export const Container = styled.div`
     align-items: center;
     position: relative;
     margin-top: ${theme.spacing[52]};
+
+    ${media.lessThan('medium')`
+      margin-top: ${theme.spacing[32]};
+    `}
   `}
 `
 
@@ -25,10 +30,8 @@ export const CirclesImage = styled(Circles)`
     top: -60px;
   `}
 `
-type WrapperProps = {
-  hasMaxWidth?: boolean
-}
-export const Wrapper = styled.div<WrapperProps>`
+
+export const Wrapper = styled.div`
   display: flex;
 
   ${media.lessThan('medium')`
@@ -132,9 +135,13 @@ export const Item = styled.li`
       margin-left: ${theme.spacing[12]};
 
       ${media.lessThan('medium')`
-        margin-left: ${theme.spacing[0]};
+        margin-left: ${theme.spacing[2]};
       `}
     }
+
+    ${media.lessThan('medium')`
+      margin-top: ${theme.spacing[1]};
+    `}
   `}
 `
 type ListProps = {
@@ -209,5 +216,19 @@ export const CubeImage = styled(Cube)`
     width: 20%;
     left: 30px;
     top: -5px;
+  `}
+`
+
+export const AsteriskLineImage = styled(AsteriskLine)`
+  ${({ theme }) => css`
+    position: absolute;
+    right: -${theme.spacing[16]};
+    bottom: -${theme.spacing[80]};
+
+    ${media.lessThan('medium')`
+      width: 50%;
+      right: -${theme.spacing[12]};
+      bottom: -${theme.spacing[52]};
+    `}
   `}
 `

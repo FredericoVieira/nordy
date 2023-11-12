@@ -1,0 +1,33 @@
+import { Meta } from '@storybook/blocks'
+
+import NordyHomePage from '../../.github/assets/nordy.png'
+
+<Meta title="Introduction/Welcome" />
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+    # Welcome to the Nordy Storybook!
+
+    Explore the components used in this project!
+
+  </div>
+  <div>
+   <img src={NordyHomePage} alt="A screenshot showing the autodocs tag being set, pointing a docs page being generated" />
+  </div>
+</div>
+
+<style>
+  {`
+    .sbdocs {
+      background-color: #000;
+    }
+
+    .sb-section-title {
+      margin-bottom: 32px;
+      
+      > h1, p {
+        color: #fff;
+      }
+    }
+  `}
+</style>

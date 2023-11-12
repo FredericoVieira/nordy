@@ -10,15 +10,15 @@ import words from '~/data/words.json'
 
 export function Home() {
   const { id } = useParams()
+  const selectedWord = words.find((word) => word.id === id)
 
   const randomInteger = generateRandomInteger(words.length)
-  const selectedWord =
-    (id && words.find((word) => word.id === id)) || words[randomInteger]
+  const wordToDisplay = selectedWord ?? words[randomInteger]
 
   return (
     <S.Page>
-      <Word {...selectedWord} />
-      <Description />
+      <Word {...wordToDisplay} />
+      {!selectedWord && <Description />}
     </S.Page>
   )
 }

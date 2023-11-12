@@ -2,7 +2,7 @@ import { MemoryRouter } from 'react-router-dom'
 
 import { render, screen } from '~/utils/tests'
 
-import { Letter } from '.'
+import { Letter } from './Letter'
 
 vi.mock('react-router-dom', async () => {
   const mod = (await vi.importActual('react-router-dom')) as object
@@ -15,7 +15,7 @@ vi.mock('react-router-dom', async () => {
 })
 
 describe('<Letter />', () => {
-  it('renders properly', () => {
+  it('should render properly', () => {
     render(
       <MemoryRouter>
         <Letter />

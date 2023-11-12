@@ -12,7 +12,7 @@ export const HeaderBar = styled.div`
   `}
 `
 
-export const Title = styled.span`
+export const Title = styled.a`
   ${({ theme }) => css`
     font-family: ${theme.fontFamily.title};
     font-size: ${theme.fontSize.bodyLarge};

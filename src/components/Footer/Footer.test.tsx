@@ -1,9 +1,9 @@
 import { render, screen } from '~/utils/tests'
 
-import { Footer } from '.'
+import { Footer } from './Footer'
 
 describe('<Footer />', () => {
-  it('renders properly', () => {
+  it('should render properly', () => {
     render(<Footer />)
 
     expect(

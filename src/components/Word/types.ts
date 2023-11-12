@@ -8,5 +8,6 @@ export type WordProps = {
   translation: string
   definitions: Array<string>
   examples: Array<string>
+  language?: string // TODO: not implemented yet
   inflections: Array<string>
 }

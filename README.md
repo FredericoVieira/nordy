@@ -56,10 +56,6 @@ yarn preview
 - `storybook:build`: create the build version of storybook
 - `generate`: runs plop to generate component files
 
-## Todo
-
-- [ ] Stories
-
 ## Features
 
 - [x] Meaning
@@ -67,14 +63,16 @@ yarn preview
 - [x] Pronunciation
 - [x] Grade level
 - [x] Category by first letter
+- [ ] Option to change between word types
+- [ ] Project tour
 - [ ] Word type: slang, acronym
 - [ ] Expressions
 - [ ] Refactor data files / database
 - [ ] Calendar selection
 - [ ] Search by date
 - [ ] Search by type
-- [ ] Send to email
-- [ ] Favorite
+- [ ] Mailing the new word daily
+- [ ] Favorite words
 - [ ] Quiz with synonym options 
 
 ---

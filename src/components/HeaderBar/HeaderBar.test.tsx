@@ -1,9 +1,9 @@
 import { render, screen } from '~/utils/tests'
 
-import { HeaderBar } from '.'
+import { HeaderBar } from './HeaderBar'
 
 describe('<HeaderBar />', () => {
-  it('renders properly', () => {
+  it('should render properly', () => {
     render(<HeaderBar />)
 
     expect(screen.getByText(/nordy - new word a day/i)).toBeInTheDocument()

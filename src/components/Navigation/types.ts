@@ -1,3 +1,3 @@
 export type NavigationProps = {
-  showHeader: boolean
+  isHomePage?: boolean
 }

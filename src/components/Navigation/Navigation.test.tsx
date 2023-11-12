@@ -3,13 +3,13 @@ import { MemoryRouter } from 'react-router-dom'
 import { generateAlphabet } from '~/utils/helpers'
 import { render, screen } from '~/utils/tests'
 
-import { Navigation } from '.'
+import { Navigation } from './Navigation'
 
 describe('<Navigation />', () => {
-  it('renders correctly', () => {
+  it('it should render properly', () => {
     render(
       <MemoryRouter>
-        <Navigation showHeader />
+        <Navigation isHomePage />
       </MemoryRouter>
     )
 

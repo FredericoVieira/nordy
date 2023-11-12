@@ -1,22 +1,20 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react'
 import { MemoryRouter } from 'react-router-dom'
 
-import { NAVIGATION_LINKS } from './navigation-links'
+import { Navigation } from './Navigation'
 
-import { Navigation } from '.'
+import type { Meta, StoryObj } from '@storybook/react'
 
-export default {
-  title: 'Navigation',
-  component: Navigation,
-  args: {
-    links: NAVIGATION_LINKS,
-  },
-} as ComponentMeta<typeof Navigation>
+const meta = {
+  title: 'Components/Navigation',
+  component: () => (
+    <MemoryRouter>
+      <Navigation isHomePage />
+    </MemoryRouter>
+  ),
+  tags: ['autodocs'],
+} satisfies Meta<typeof Navigation>
 
-const Template: ComponentStory<typeof Navigation> = (args) => (
-  <MemoryRouter>
-    <Navigation {...args} />
-  </MemoryRouter>
-)
+export default meta
+type Story = StoryObj<typeof meta>
 
-export const Default = Template.bind({})
+export const Default: Story = {}

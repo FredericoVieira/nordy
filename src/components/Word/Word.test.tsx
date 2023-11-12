@@ -1,6 +1,6 @@
 import { render, screen } from '~/utils/tests'
 
-import { Word } from '.'
+import { Word } from './Word'
 
 const word = {
   id: 'adhere',
@@ -22,13 +22,13 @@ const word = {
 }
 
 describe('<Word />', () => {
-  it('renders properly', () => {
+  it('should render properly', () => {
     render(<Word {...word} />)
 
     expect(screen.getAllByText(/adhere/i)).toHaveLength(3)
     expect(screen.getByText('stick')).toBeInTheDocument()
     expect(screen.getByText(/verb/i)).toBeInTheDocument()
-    expect(screen.getByText(/2nd-sch/i)).toBeInTheDocument()
+    expect(screen.getByText(/medium/i)).toBeInTheDocument()
     expect(screen.getByText(/aderir/i)).toBeInTheDocument()
     expect(screen.getByText(/ad·heer/i)).toBeInTheDocument()
     expect(

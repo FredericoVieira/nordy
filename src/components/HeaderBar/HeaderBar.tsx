@@ -7,7 +7,7 @@ export function HeaderBar() {
 
   return (
     <S.HeaderBar>
-      <S.Title>Nordy - New word a day</S.Title>
+      <S.Title href="/">Nordy - New word a day</S.Title>
       <S.GithubCorner
         href="https://github.com/FredericoVieira/nordy"
         octoColor={black}

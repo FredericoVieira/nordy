@@ -1,12 +1,33 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { Word } from './Word'
 
-import { Word } from '.'
+import type { Meta, StoryObj } from '@storybook/react'
 
-export default {
-  title: 'Word',
+const meta = {
+  title: 'Components/Word',
   component: Word,
-} as ComponentMeta<typeof Word>
+  tags: ['autodocs'],
+  args: {
+    id: 'adhere',
+    firstLetter: 'a',
+    level: 2,
+    type: 'verb',
+    pronunciation: 'ad·heer',
+    synonym: 'stick',
+    translation: 'aderir',
+    definitions: [
+      'stick fast to a surface or substance',
+      'to give support or maintain loyalty',
+    ],
+    examples: [
+      'the stamp failed to adhere to the envelope',
+      'adhere to traditional values',
+    ],
+    language: 'formal',
+    inflections: [],
+  },
+} satisfies Meta<typeof Word>
 
-const Template: ComponentStory<typeof Word> = (args) => <Word {...args} />
+export default meta
+type Story = StoryObj<typeof meta>
 
-export const Default = Template.bind({})
+export const Default: Story = {}

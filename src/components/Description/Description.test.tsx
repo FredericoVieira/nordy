@@ -1,9 +1,9 @@
 import { render, screen } from '~/utils/tests'
 
-import { Description } from '.'
+import { Description } from './Description'
 
 describe('<Description />', () => {
-  it('renders properly', () => {
+  it('should render properly', () => {
     render(<Description />)
 
     expect(

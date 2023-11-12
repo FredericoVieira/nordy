@@ -1,12 +1,14 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react'
+import { HeaderBar } from './HeaderBar'
 
-import { HeaderBar } from '.'
+import type { Meta, StoryObj } from '@storybook/react'
 
-export default {
-  title: 'HeaderBar',
+const meta = {
+  title: 'Components/HeaderBar',
   component: HeaderBar,
-} as ComponentMeta<typeof HeaderBar>
+  tags: ['autodocs'],
+} satisfies Meta<typeof HeaderBar>
 
-const Template: ComponentStory<typeof HeaderBar> = () => <HeaderBar />
+export default meta
+type Story = StoryObj<typeof meta>
 
-export const Default = Template.bind({})
+export const Default: Story = {}
