@@ -63,11 +63,10 @@ yarn preview
 - [x] Pronunciation
 - [x] Grade level
 - [x] Category by first letter
-- [ ] Option to change between word types
+- [x] Add classification: formal, slang, colloquialism, jargon...
 - [ ] Project tour
-- [ ] Word type: slang, acronym
-- [ ] Expressions
-- [ ] Refactor data files / database
+- [ ] Option to change between word types: noun, adjective, adverb...
+- [ ] Refactor data files to database
 - [ ] Calendar selection
 - [ ] Search by date
 - [ ] Search by type

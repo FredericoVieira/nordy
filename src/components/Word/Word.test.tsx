@@ -10,6 +10,7 @@ const word = {
   pronunciation: 'ad·heer',
   synonym: 'stick',
   translation: 'aderir',
+  classification: 'formal',
   definitions: [
     'stick fast to a surface or substance',
     'to give support or maintain loyalty',

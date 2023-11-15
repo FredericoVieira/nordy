@@ -12,7 +12,7 @@ export function Home() {
   const { id } = useParams()
   const selectedWord = words.find((word) => word.id === id)
 
-  const randomInteger = generateRandomInteger(words.length)
+  const randomInteger = generateRandomInteger(words.length - 1)
   const wordToDisplay = selectedWord ?? words[randomInteger]
 
   return (

@@ -22,7 +22,7 @@ const meta = {
       'the stamp failed to adhere to the envelope',
       'adhere to traditional values',
     ],
-    language: 'formal',
+    classification: 'formal',
     inflections: [],
   },
 } satisfies Meta<typeof Word>

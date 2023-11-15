@@ -1,6 +1,7 @@
 import { handlePunctuation, normalizeGradeLevel } from '~/utils/helpers'
 
 import * as S from './Word.styles'
+import { CLASSIFICATIONS } from './constants'
 
 import type { WordProps } from './types'
 
@@ -11,6 +12,7 @@ export function Word({
   pronunciation,
   synonym,
   translation,
+  classification,
   definitions,
   examples,
   inflections,
@@ -35,7 +37,12 @@ export function Word({
     <S.Container>
       <S.CirclesImage />
       <S.Wrapper>
-        <S.Word main>{id}</S.Word>
+        <S.WordWrapper>
+          {classification !== CLASSIFICATIONS.FORMAL && (
+            <S.Classification>{classification}</S.Classification>
+          )}
+          <S.Word main>{id}</S.Word>
+        </S.WordWrapper>
         <S.Properties>
           <S.Property>
             <S.Word>{synonym}</S.Word>

@@ -7,9 +7,9 @@
     "pronunciation": "ad·heer",
     "synonym": "stick",
     "translation": "aderir",
+    "classification": "formal",
     "definitions": ["stick fast to a surface or substance", "to give support or maintain loyalty"],
     "examples": ["the stamp failed to adhere to the envelope", "adhere to traditional values"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -20,9 +20,9 @@
     "pronunciation": "ak·naa·luhj",
     "synonym": "admit",
     "translation": "reconhecer",
-    "definitions": ["to recognize the rights, authority, or status of", "to disclose knowledge of or agreement with"],
+    "classification": "formal",
+    "definitions": ["to recognize the rights, authority, or status of", "to admit the truth or existence of"],
     "examples": ["they acknowledged him as their leader", "she readily acknowledged her mistake"],
-    "language": "formal",
     "inflections": ["acknowledged"]
   },
   {
@@ -33,9 +33,9 @@
     "pronunciation": "a·meh·nuh·te",
     "synonym": "facility",
     "translation": "cortesia",
+    "classification": "formal",
     "definitions": ["something intended to make life more pleasant or comfortable"],
     "examples": ["this hotel give us good amenities"],
-    "language": "formal",
     "inflections": ["amenities"]
   },
   {
@@ -46,9 +46,9 @@
     "pronunciation": "a·wehr",
     "synonym": "conscious of",
     "translation": "ciente",
+    "classification": "formal",
     "definitions": ["having knowledge or perception of a situation or fact"],
     "examples": ["he was aware that a problem existed"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -59,9 +59,9 @@
     "pronunciation": "behr·lee",
     "synonym": "hardly",
     "translation": "por muito pouco",
+    "classification": "formal",
     "definitions": ["only just, almost not"],
     "examples": ["he barely talked to me"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -72,9 +72,9 @@
     "pronunciation": "bai·uhs",
     "synonym": "prejudice",
     "translation": "viés",
+    "classification": "formal",
     "definitions": ["prejudice in favor of or against one thing, person, or group compared with another"],
     "examples": ["his natural bias was to respect things as they were"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -85,9 +85,9 @@
     "pronunciation": "bown·dr·ee",
     "synonym": "border",
     "translation": "limite",
+    "classification": "formal",
     "definitions": ["a real or imagined line that marks the edge or limit of something"],
     "examples": ["those two trees mark the boundary of our property"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -98,9 +98,22 @@
     "pronunciation": "braad·lee",
     "synonym": "in general",
     "translation": "amplamente",
+    "classification": "formal",
     "definitions": ["in a general way", "without considering specific examples or all the details"],
     "examples": ["people broadly agree that government should care about the population", "broadly speaking, I agree with you"],
-    "language": "formal",
+    "inflections": []
+  },
+  {
+    "id": "bummed",
+    "firstLetter": "b",
+    "level": 1,
+    "type": "adjective",
+    "pronunciation": "buhmd",
+    "synonym": "afflicted",
+    "translation": "desapontado",
+    "classification": "slang",
+    "definitions": ["annoyed, upset, disappointed"],
+    "examples": ["I was really bummed because my car broke down and I couldn't go to the party"],
     "inflections": []
   },
   {
@@ -111,22 +124,35 @@
     "pronunciation": "kling",
     "synonym": "sticky",
     "translation": "grudar",
+    "classification": "formal",
     "definitions": ["adhere or stick firmly or closely to", "be hard to part or remove from"],
     "examples": ["the smell of smoke clung to their clothes", "don't cling to the first thing you see"],
-    "language": "formal",
     "inflections": ["clung"]
+  },
+  {
+    "id": "defiance",
+    "firstLetter": "d",
+    "level": 2,
+    "type": "noun",
+    "pronunciation": "dee·fai·uhns",
+    "synonym": "resistance",
+    "translation": "desobediência",
+    "classification": "formal",
+    "definitions": ["open resistance, bold disobedience"],
+    "examples": ["any defiance of the authoritarian regime would have dire consequences"],
+    "inflections": []
   },
   {
     "id": "disclaimer",
     "firstLetter": "d",
     "level": 2,
-    "type": "verb",
+    "type": "noun",
     "pronunciation": "dis·klay·mr",
     "synonym": "clause",
     "translation": "aviso legal",
+    "classification": "formal",
     "definitions": ["a statement that you are not responsible for something"],
     "examples": ["the disclaimer reminded viewers that the movie is a drama, not a documentary"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -137,9 +163,9 @@
     "pronunciation": "dis·klow·zhr",
     "synonym": "revelation",
     "translation": "divulgação",
+    "classification": "formal",
     "definitions": ["to improve the quality, amount, or strength of something"],
     "examples": ["a judge ordered the disclosure of the documents"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -149,11 +175,37 @@
     "type": "verb",
     "pronunciation": "ehn·hans",
     "synonym": "increase",
-    "translation": "realçar",
-    "definitions": ["the action of making new or secret information known"],
+    "translation": "aprimorar",
+    "classification": "formal",
+    "definitions": ["to increase or improve in value, desirability, or attractiveness"],
     "examples": ["this dictionary enhance listening skills and comprehension"],
-    "language": "formal",
     "inflections": []
+  },
+  {
+    "id": "farther",
+    "firstLetter": "f",
+    "level": 1,
+    "type": "adverb",
+    "pronunciation": "faa·thr",
+    "synonym": "afar",
+    "translation": "mais distante",
+    "classification": "formal",
+    "definitions": ["at or to a greater distance or more advanced point"],
+    "examples": ["I used to live close to school, but now I live farther"],
+    "inflections": []
+  },
+  {
+    "id": "girder",
+    "firstLetter": "g",
+    "level": 1,
+    "type": "noun",
+    "pronunciation": "gur·dr",
+    "synonym": "joist",
+    "translation": "viga",
+    "classification": "formal",
+    "definitions": ["a horizontal main structural member (as in a building or bridge) that supports vertical loads and that consists of a single piece or of more than one piece bound together"],
+    "examples": ["the bridge over the river is supported by strong girders"],
+    "inflections": ["girders"]
   },
   {
     "id": "haste",
@@ -163,9 +215,9 @@
     "pronunciation": "hayst",
     "synonym": "speed",
     "translation": "pressa",
+    "classification": "formal",
     "definitions": ["excessive speed or urgency"],
     "examples": ["in her haste, she slammed her shoulder against the stall"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -176,9 +228,9 @@
     "pronunciation": "hed·kwor·trz",
     "synonym": "main office",
     "translation": "sede",
+    "classification": "formal",
     "definitions": ["the main offices or center of operations of an organization, such as the army, police, or a company"],
     "examples": ["the airline headquarters is in Boston"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -189,22 +241,35 @@
     "pronunciation": "i·nr",
     "synonym": "internal",
     "translation": "interno",
+    "classification": "formal",
     "definitions": ["inside or contained within something else"],
     "examples": ["an inner courtyard"],
-    "language": "formal",
+    "inflections": []
+  },
+  {
+    "id": "Juggernaut",
+    "firstLetter": "j",
+    "level": 3,
+    "type": "noun",
+    "pronunciation": "juh·gr·naat",
+    "synonym": "steamroller",
+    "translation": "rolo compressor",
+    "classification": "formal",
+    "definitions": ["a huge, powerful, and overwhelming force or institution"],
+    "examples": ["he knows the web could be a juggernaut for promotion and sales of his products"],
     "inflections": []
   },
   {
     "id": "kinda",
     "firstLetter": "k",
     "level": 1,
-    "type": "adjective",
+    "type": "adverb",
     "pronunciation": "kine·duh",
     "synonym": "quite",
     "translation": "tipo",
+    "classification": "slang",
     "definitions": ["used in writing to represent an informal way of saying 'kind of'"],
     "examples": ["I think it's kinda funny"],
-    "language": "informal",
     "inflections": []
   },
   {
@@ -215,9 +280,9 @@
     "pronunciation": "lek",
     "synonym": "escape",
     "translation": "vazar",
+    "classification": "formal",
     "definitions": ["to let a substance or light in or out through an opening", "intentionally disclose"],
     "examples": ["the roof was leaking", "who had a motive to leak the story?"],
-    "language": "formal",
     "inflections": ["leaking"]
   },
   {
@@ -227,10 +292,36 @@
     "type": "noun",
     "pronunciation": "lid",
     "synonym": "cover",
-    "translation": "tipo",
+    "translation": "tampa",
+    "classification": "formal",
     "definitions": ["a removable or hinged cover for the top of a container"],
     "examples": ["the lid is fully detachable"],
-    "language": "formal",
+    "inflections": []
+  },
+  {
+    "id": "marvelous",
+    "firstLetter": "m",
+    "level": 2,
+    "type": "adjective",
+    "pronunciation": "maar·vuh·luhs",
+    "synonym": "amazing",
+    "translation": "maravilhoso",
+    "classification": "formal",
+    "definitions": ["extremely good or pleasing"],
+    "examples": ["you have done a marvelous job"],
+    "inflections": []
+  },
+  {
+    "id": "naive",
+    "firstLetter": "n",
+    "level": 1,
+    "type": "adjective",
+    "pronunciation": "na·ive",
+    "synonym": "inocent",
+    "translation": "ingênuo",
+    "classification": "formal",
+    "definitions": ["showing lack of experience or knowledge"],
+    "examples": ["a naive belief that all people are good"],
     "inflections": []
   },
   {
@@ -240,11 +331,24 @@
     "type": "verb",
     "pronunciation": "owt·sors",
     "synonym": "source",
-    "translation": "terceirização",
+    "translation": "terceirizar",
+    "classification": "formal",
     "definitions": ["obtain goods or a service from an outside or foreign supplier, especially in place of an internal source"],
-    "examples": ["you may choose to outsource this function to another company or do it yourself"],
-    "language": "formal",
-    "inflections": []
+    "examples": ["the company outsources the payroll management"],
+    "inflections": ["outsources"]
+  },
+  {
+    "id": "overcome",
+    "firstLetter": "o",
+    "level": 1,
+    "type": "verb",
+    "pronunciation": "ow·vr·kuhm",
+    "synonym": "defeat",
+    "translation": "superação",
+    "classification": "formal",
+    "definitions": ["to gain an advantage or victory over", "succeed in dealing with a problem or difficulty"],
+    "examples": ["after a tough battle, they overcame the enemy", "she overcame a leg injury and is back running again."],
+    "inflections": ["overcame"]
   },
   {
     "id": "prior",
@@ -254,9 +358,9 @@
     "pronunciation": "prai·ur",
     "synonym": "before",
     "translation": "anterior",
+    "classification": "formal",
     "definitions": ["coming before in time, order, or importance"],
     "examples": ["passengers may board the plane twenty minutes prior to departure"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -267,9 +371,9 @@
     "pronunciation": "prown",
     "synonym": "susceptible",
     "translation": "propenso",
+    "classification": "formal",
     "definitions": ["likely to do, get, or suffer from something", "lying on your chest, with your face looking down"],
     "examples": ["as a child, he was prone to ear infections", "the injured player was lifted into a cart and driven off the field in a prone position"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -280,9 +384,9 @@
     "pronunciation": "raa·thr",
     "synonym": "preferably",
     "translation": "em vez",
+    "classification": "formal",
     "definitions": ["in preference to", "more accurately, more exactly"],
     "examples": ["I'd rather wear the black shoes", "these were not common criminals, but rather enemies of the state"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -293,9 +397,9 @@
     "pronunciation": "reh·gaar·duhng",
     "synonym": "concerning",
     "translation": "em relação a",
+    "classification": "formal",
     "definitions": ["in relation to, about"],
     "examples": ["I have a question regarding your last statement"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -306,9 +410,9 @@
     "pronunciation": "ruh·lai",
     "synonym": "count",
     "translation": "confiar",
+    "classification": "formal",
     "definitions": ["to depend on or trust someone or something"],
     "examples": ["you can't rely on good weather for the whole trip"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -319,9 +423,22 @@
     "pronunciation": "sah·keh",
     "synonym": "purpose",
     "translation": "causa",
+    "classification": "formal",
     "definitions": ["for the purpose of, in the interest of, in order to achieve or preserve"],
     "examples": ["the couple moved to the coast for the sake of her health"],
-    "language": "formal",
+    "inflections": []
+  },
+  {
+    "id": "scarf",
+    "firstLetter": "s",
+    "level": 1,
+    "type": "noun",
+    "pronunciation": "skaarf",
+    "synonym": "neckerchief",
+    "translation": "cachecol",
+    "classification": "formal",
+    "definitions": ["a broad band of cloth worn about the shoulders, around the neck, or over the head"],
+    "examples": ["he was wearing a hat and scarf against the cold."],
     "inflections": []
   },
   {
@@ -332,9 +449,9 @@
     "pronunciation": "strive",
     "synonym": "try",
     "translation": "esforço",
+    "classification": "formal",
     "definitions": ["make great efforts to achieve or obtain something"],
     "examples": ["I will strive to overcome these problems"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -345,9 +462,9 @@
     "pronunciation": "suh·tl",
     "synonym": "slight",
     "translation": "sutil",
+    "classification": "formal",
     "definitions": ["not loud, bright, noticeable, or obvious in any way", "small but important"],
     "examples": ["the room was painted a subtle shade of gray", "there is a subtle difference between these two plans"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -358,9 +475,9 @@
     "pronunciation": "tor·word",
     "synonym": "against",
     "translation": "na direção",
+    "classification": "formal",
     "definitions": ["in the direction of"],
     "examples": ["I walked toward the front door"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -371,9 +488,9 @@
     "pronunciation": "uhn·bai·uhst",
     "synonym": "impartial",
     "translation": "imparcial",
+    "classification": "formal",
     "definitions": ["showing no prejudice for or against something"],
     "examples": ["they give clear, unbiased advice"],
-    "language": "formal",
     "inflections": []
   },
   {
@@ -384,9 +501,9 @@
     "pronunciation": "wiz·dm",
     "synonym": "sagacity",
     "translation": "sabedoria",
+    "classification": "formal",
     "definitions": ["the ability to use your knowledge and experience to make good decisions and judgments"],
     "examples": ["I certainly hope to gain a little wisdom as I grow older"],
-    "language": "formal",
     "inflections": []
   }
 ]

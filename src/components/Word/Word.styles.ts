@@ -40,6 +40,33 @@ export const Wrapper = styled.div`
   `}
 `
 
+export const WordWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const Classification = styled.span`
+  ${({ theme }) => css`
+    position: relative;
+    top: 0px;
+    left: -45px;
+    width: fit-content;
+    border: 1px solid ${theme.colors.yellow};
+    border-radius: 25px;
+    font-size: ${theme.fontSize.labelSmall};
+    font-weight: ${theme.fontWeight.bold};
+    letter-spacing: ${theme.spacing[2]};
+    text-transform: uppercase;
+    padding: ${theme.spacing[2]} ${theme.spacing[6]};
+
+    ${media.lessThan('medium')`
+      font-size: ${theme.fontSize.labelExtraSmall};
+      letter-spacing: ${theme.spacing[1]};
+      padding: ${theme.spacing[1]} ${theme.spacing[4]};
+    `}
+  `}
+`
+
 type WordProps = {
   main?: boolean
 }
@@ -48,8 +75,8 @@ export const Word = styled.span<WordProps>`
     main
       ? css`
           font-size: ${theme.fontSize.titleLarge};
-          font-size: min(${theme.fontSize.titleLarge}, 10vw);
-          line-height: ${theme.fontSize.titleLarge};
+          font-size: min(${theme.fontSize.titleLarge}, 12vw);
+          line-height: min(${theme.fontSize.titleLarge}, 12vw);
           text-transform: uppercase;
           margin-right: ${theme.spacing[6]};
 
@@ -152,22 +179,22 @@ export const List = styled.ol<ListProps>`
   ${({ theme, hasSingleItem, isExample }) => css`
     font-size: ${theme.fontSize.labelLarge};
     line-height: ${theme.fontSize.body};
-    margin-top: ${theme.spacing[2]};
+    margin: ${theme.spacing[2]} auto 0 auto;
+    max-width: 70vw;
+
     ${isExample && `margin-left: ${theme.spacing[10]};`}
 
     ${hasSingleItem &&
-    `
+    css`
       list-style: none;
-      
-      ${Item} {    
+
+      ${Item} {
         &:last-child {
-          ${
-            isExample &&
-            `
+          ${isExample &&
+          `
               margin-top: ${theme.spacing[8]};
               margin-left: ${theme.spacing[0]};
-            `
-          }
+            `}
         }
       }
     `}
@@ -177,13 +204,15 @@ export const List = styled.ol<ListProps>`
       line-height: ${theme.fontSize.labelLarge};
       list-style-position: inside;
       margin-top: ${theme.spacing[20]};
+      margin: ${theme.spacing[20]} auto 0 auto;
+      max-width: 100%;
 
       ${
         isExample &&
-        `
+        css`
           margin-top: ${theme.spacing[60]};
-          margin-left: ${theme.spacing[0]}; 
-      `
+          margin-left: ${theme.spacing[0]};
+        `
       }
 
     `}

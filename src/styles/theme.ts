@@ -77,6 +77,8 @@ export const theme = {
     96: '24rem',
   },
   fontSize: {
+    /** 16px */
+    labelExtraSmall: '1rem',
     /** 24px */
     labelSmall: '1.5rem',
     /** 32px */

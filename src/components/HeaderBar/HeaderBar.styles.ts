@@ -1,4 +1,5 @@
 import GithubCornerIcon from 'react-github-corner'
+import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
@@ -12,7 +13,7 @@ export const HeaderBar = styled.div`
   `}
 `
 
-export const Title = styled.a`
+export const Title = styled(Link)`
   ${({ theme }) => css`
     font-family: ${theme.fontFamily.title};
     font-size: ${theme.fontSize.bodyLarge};
