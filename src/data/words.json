@@ -347,7 +347,7 @@
     "translation": "superação",
     "classification": "formal",
     "definitions": ["to gain an advantage or victory over", "succeed in dealing with a problem or difficulty"],
-    "examples": ["after a tough battle, they overcame the enemy", "she overcame a leg injury and is back running again."],
+    "examples": ["after a tough battle, they overcame the enemy", "she overcame a leg injury and is back running again"],
     "inflections": ["overcame"]
   },
   {
@@ -438,7 +438,7 @@
     "translation": "cachecol",
     "classification": "formal",
     "definitions": ["a broad band of cloth worn about the shoulders, around the neck, or over the head"],
-    "examples": ["he was wearing a hat and scarf against the cold."],
+    "examples": ["he was wearing a hat and scarf against the cold"],
     "inflections": []
   },
   {
@@ -494,6 +494,19 @@
     "inflections": []
   },
   {
+    "id": "vanish",
+    "firstLetter": "v",
+    "level": 2,
+    "type": "verb",
+    "pronunciation": "va·nihsh",
+    "synonym": "disappear",
+    "translation": "desaparecer",
+    "classification": "formal",
+    "definitions": ["disappear suddenly and completely"],
+    "examples": ["Dinosaurs vanished from the face of the earth millions of years ago"],
+    "inflections": ["vanished"]
+  },
+  {
     "id": "wisdom",
     "firstLetter": "w",
     "level": 1,
@@ -505,5 +518,18 @@
     "definitions": ["the ability to use your knowledge and experience to make good decisions and judgments"],
     "examples": ["I certainly hope to gain a little wisdom as I grow older"],
     "inflections": []
+  },
+  {
+    "id": "yell",
+    "firstLetter": "y",
+    "level": 1,
+    "type": "verb",
+    "pronunciation": "yel",
+    "synonym": "scream",
+    "translation": "gritar",
+    "classification": "formal",
+    "definitions": ["to shout something loudly"],
+    "examples": ["he score and the fans yelled at him"],
+    "inflections": ["yelled"]
   }
 ]

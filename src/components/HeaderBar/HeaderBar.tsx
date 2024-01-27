@@ -12,6 +12,7 @@ export function HeaderBar() {
         href="https://github.com/FredericoVieira/nordy"
         octoColor={black}
         bannerColor={gray}
+        target="_blank"
       />
     </S.HeaderBar>
   )
