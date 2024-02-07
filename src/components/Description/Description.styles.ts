@@ -18,7 +18,6 @@ export const Container = styled.div`
 export const AsteriskLineImage = styled(AsteriskLine)`
   ${({ theme }) => css`
     position: absolute;
-    right: 0;
     right: -${theme.spacing[16]};
 
     ${media.lessThan('medium')`

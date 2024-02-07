@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 
 import { Description } from '~/components/Description'
+import { QuickTour } from '~/components/QuickTour'
 import { Word } from '~/components/Word'
 import { generateRandomInteger } from '~/utils/helpers'
 
@@ -17,6 +18,7 @@ export function Home() {
 
   return (
     <S.Page>
+      <QuickTour />
       <Word {...wordToDisplay} />
       {!selectedWord && <Description />}
     </S.Page>

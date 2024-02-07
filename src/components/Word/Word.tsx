@@ -17,8 +17,6 @@ export function Word({
   examples,
   inflections,
 }: WordProps) {
-  const hasSingleItem = definitions?.length === 1
-
   const handleExample = (example: string) => {
     const inflection = inflections.find((inflection) => {
       return example.includes(inflection)
@@ -41,22 +39,24 @@ export function Word({
           {classification !== CLASSIFICATIONS.FORMAL && (
             <S.Classification>{classification}</S.Classification>
           )}
-          <S.Word main>{id}</S.Word>
+          <S.Word id="word" main>
+            {id}
+          </S.Word>
         </S.WordWrapper>
         <S.Properties>
-          <S.Property>
+          <S.Property id="synonym">
             <S.Word>{synonym}</S.Word>
           </S.Property>
-          <S.Property>{type}</S.Property>
-          <S.Property>{normalizeGradeLevel(level)}</S.Property>
+          <S.Property id="type">{type}</S.Property>
+          <S.Property id="level">{normalizeGradeLevel(level)}</S.Property>
         </S.Properties>
       </S.Wrapper>
       <S.Wrapper>
-        <S.Translation>{translation}</S.Translation>
-        <S.Pronunciation>/{pronunciation}/</S.Pronunciation>
+        <S.Translation id="translation">{translation}</S.Translation>
+        <S.Pronunciation id="pronunciation">/{pronunciation}/</S.Pronunciation>
       </S.Wrapper>
       <S.Wrapper>
-        <S.List hasSingleItem={hasSingleItem}>
+        <S.List id="definition">
           {definitions?.map((definition, index) => (
             <S.Item key={index}>{definition}</S.Item>
           ))}
@@ -64,7 +64,7 @@ export function Word({
       </S.Wrapper>
       <S.Examples>
         <S.CubeImage />
-        <S.List hasSingleItem={hasSingleItem} isExample>
+        <S.List id="example" isExample>
           {examples?.map((example, index) => (
             <S.Item key={index}>{handleExample(example)}</S.Item>
           ))}

@@ -109,6 +109,7 @@ export const Properties = styled.div`
 export const Property = styled.span`
   text-transform: uppercase;
   white-space: nowrap;
+  width: fit-content;
 
   ${({ theme }) => css`
     ${media.lessThan('medium')`
@@ -158,51 +159,43 @@ export const Item = styled.li`
       text-transform: uppercase;
     }
 
-    &:last-child {
-      margin-left: ${theme.spacing[12]};
+    &:only-child {
+      list-style: none;
+    }
+
+    &:nth-child(2) {
+      margin-left: ${theme.spacing[8]};
 
       ${media.lessThan('medium')`
+        margin-top: ${theme.spacing[1]};
         margin-left: ${theme.spacing[2]};
       `}
     }
-
-    ${media.lessThan('medium')`
-      margin-top: ${theme.spacing[1]};
-    `}
   `}
 `
 type ListProps = {
-  hasSingleItem?: boolean
   isExample?: boolean
 }
 export const List = styled.ol<ListProps>`
-  ${({ theme, hasSingleItem, isExample }) => css`
+  ${({ theme, isExample }) => css`
     font-size: ${theme.fontSize.labelLarge};
     line-height: ${theme.fontSize.body};
+    list-style-position: inside;
     margin: ${theme.spacing[2]} auto 0 auto;
     max-width: 70vw;
 
-    ${isExample && `margin-left: ${theme.spacing[10]};`}
-
-    ${hasSingleItem &&
+    ${isExample &&
     css`
-      list-style: none;
+      margin-left: ${theme.spacing[10]};
 
-      ${Item} {
-        &:last-child {
-          ${isExample &&
-          `
-              margin-top: ${theme.spacing[8]};
-              margin-left: ${theme.spacing[0]};
-            `}
-        }
+      &:has(li:only-child) {
+        margin-top: ${theme.spacing[8]};
       }
     `}
 
     ${media.lessThan('medium')`
       font-size: ${theme.fontSize.label};
       line-height: ${theme.fontSize.labelLarge};
-      list-style-position: inside;
       margin-top: ${theme.spacing[20]};
       margin: ${theme.spacing[20]} auto 0 auto;
       max-width: 100%;
@@ -210,7 +203,7 @@ export const List = styled.ol<ListProps>`
       ${
         isExample &&
         css`
-          margin-top: ${theme.spacing[60]};
+          margin-top: ${theme.spacing[60]} !important;
           margin-left: ${theme.spacing[0]};
         `
       }
@@ -224,13 +217,13 @@ export const Examples = styled.div`
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    width: 60%;
+    max-width: 65vw;
     position: relative;
     margin: ${theme.spacing[72]} ${theme.spacing[0]} ${theme.spacing[10]}
       ${theme.spacing[20]};
 
     ${media.lessThan('medium')`
-      width: 100%;
+      max-width: 100%;
       margin: ${theme.spacing[0]};
     `}
   `}

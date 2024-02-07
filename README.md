@@ -64,7 +64,7 @@ yarn preview
 - [x] Grade level
 - [x] Category by first letter
 - [x] Add classification: formal, slang, colloquialism, jargon...
-- [ ] Project tour
+- [x] Project tour
 - [ ] Option to change between word types: noun, adjective, adverb...
 - [ ] Refactor data files to database
 - [ ] Calendar selection

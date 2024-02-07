@@ -10,7 +10,7 @@ export function Description() {
       </S.Description>
       <S.Motivation>
         The idea came about as a way to improve my English. The words shown are
-        common words, used in everyday life.
+        common words, used in everyday life
         <br />
         <br />
         The dictionary is intended for intermediate and advanced English
