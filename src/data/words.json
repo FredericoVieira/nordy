@@ -195,6 +195,19 @@
     "inflections": []
   },
   {
+    "id": "flaunt",
+    "firstLetter": "f",
+    "level": 2,
+    "type": "verb",
+    "pronunciation": "flaant",
+    "synonym": "show off",
+    "translation": "ostentar",
+    "classification": "formal",
+    "definitions": ["to display possessions, oneself, ostentatiously"],
+    "examples": ["he has a lot of money but he does not flaunt it"],
+    "inflections": []
+  },
+  {
     "id": "girder",
     "firstLetter": "g",
     "level": 1,
